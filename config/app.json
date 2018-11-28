@@ -1,0 +1,50 @@
+{
+  "$schema": "../node_modules/sp-build-tasks/schema/v1/sppp.json",
+  "spFolder": "SiteAssets/KS_CEWP",
+  "distFolder": "./dist",
+  "copyAssetsMap": [
+    {
+      "name": "jsTree",
+      "src": [
+        "./node_modules/jstree/dist/jstree.min.js"
+      ],
+      "dist": "./dist/libs"
+    },
+    {
+      "name": "jQuery",
+      "src": [
+        "./node_modules/jquery/dist/jquery.min.js"
+      ],
+      "dist": "./dist/libs"
+    },
+    {
+      "name": "PnPjs",
+      "src": [
+        "./node_modules/@pnp/pnpjs/dist/pnpjs.es5.umd.bundle.min.js"
+      ],
+      "dist": "./dist/libs"
+    },
+    {
+      "name": "React",
+      "src": [
+        "./node_modules/react/umd/react.production.min.js",
+        "./node_modules/react-dom/umd/react-dom.production.min.js"
+      ],
+      "dist": "./dist/libs"
+    }
+  ],
+  "webpackItemsMap": [
+    {
+      "name": "Polyfills",
+      "entry": "./src/scripts/utils/polyfills.ts",
+      "target": "polyfills.js",
+      "includePolyfills": false
+    },
+    {
+      "name": "Application",
+      "entry": "./src/scripts/index.ts",
+      "target": "app.js",
+      "includePolyfills": false
+    }
+  ]
+}

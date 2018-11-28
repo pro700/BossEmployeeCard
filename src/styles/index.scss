@@ -1,0 +1,47 @@
+//@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+//@import '~jstree/dist/themes/default/style.css';
+
+// Here goes your awesome SCSS
+
+
+.employee-card {
+
+    table.panels td {
+        padding: 2px;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    table.employees td, table.employees th {
+        padding: 2px;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .info-panel-heading {
+        font-weight: bold;
+        color: #666;
+    }
+
+    .name-footer {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #444;
+    }
+
+    a.employee-link, a.employee-link:link, a.employee-link:visited {
+        text-decoration: none;
+        color: #933;
+    }
+
+    a.employee-link:hover, a.employee-link:active {
+        text-decoration: underline;
+        color: #933;
+        cursor: pointer;
+    }
+
+    div.employee-search {
+        width: 400px;
+        margin-bottom: 8px;
+    }
+}
