@@ -127,7 +127,9 @@ $( "#alldata" ).load( _spPageContextInfo.webAbsoluteUrl + "/SitePages/KS_Peoples
                     <td>
                       <img src='${ _spPageContextInfo.webAbsoluteUrl }/SiteAssets/Pictures/ADPhotos/${ child_node.original.email }.jpg' alt='' height='48'/>
                     </td>
-                    <td><a id='${id}' class='employee-link'>${ child_node.text }</a></td>
+                    <td>
+                      <a id='${id}' class='employee-link'>${ child_node.text }</a>
+                    </td>
                     <td> ${ child_node.original.title }</td>
                     <td> ${ GetDeptPath(jstreedata, child_node, root_node_id) } </td>
                     <td> ${ child_node.original.workphone }</td>
